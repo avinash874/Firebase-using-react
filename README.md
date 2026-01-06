@@ -19,3 +19,40 @@ If you are developing a production application, we recommend using TypeScript wi
 * git add .
 * git commit -m ""
 * git push origin main
+
+# 10 How to Setup a Firebase Realtime Database with Reactjs 
+
+* firebase real-time database and how we can use the firebase real-time database in our Reactjs Application.
+
+* Firebase Realtime Database is a cloud-hosted NoSQL database by Firebase that stores data as a single JSON tree and syncs in real time to all connected clients.
+
+🧠 What makes Realtime Database different?
+
+* JSON tree structure (not collections/documents)
+* Instant real-time updates
+* Offline support
+* Very fast for live apps (chat, presence, counters)
+
+import { ref, get } from "firebase/database";
+
+<!-- READ / GET DATA -->
+# Read once
+const snapshot = await get(ref(database, "users"));
+if (snapshot.exists()) {
+  console.log(snapshot.val());
+}
+
+<!-- # Read in real time (listener) -->
+
+* // 
+import { ref, onValue } from "firebase/database";
+
+const usersRef = ref(database, "users");
+const unsubscribe = onValue(usersRef, (snapshot) => {
+  console.log(snapshot.val());
+});
+
+// stop listening
+// unsubscribe();
+
+

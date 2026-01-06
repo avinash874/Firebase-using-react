@@ -1,0 +1,183 @@
+<<<<<<< HEAD
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eceef7;
+}
+
+/* App wrapper */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -490px;
+  margin-left: 350px;
+}
+
+/* Title */
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Signup container */
+.signup-page {
+  background: white;
+  padding: 25px 28px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  margin-left: 600px;
+  gap: 12px;
+}
+.signin-page {
+  background: rgb(237, 215, 215);
+  padding: 25px 28px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  margin-left: 600px;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+/* Labels */
+.signup-page label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0e0909;
+}
+.signin-page label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #0e0909;
+}
+
+/* Inputs */
+.signup-page input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+.signin-page input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.signup-page input:focus {
+  border-color: #4CAF50;
+}
+.signin-page input:focus {
+  border-color: #4CAF50;
+}
+
+/* Signup button */
+.signup-page button {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* -------- Responsive Layout -------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .App {
+    padding: 20px;
+  }
+
+  .signup-page {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+=======
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+>>>>>>> 7eed745 (Added firebase)

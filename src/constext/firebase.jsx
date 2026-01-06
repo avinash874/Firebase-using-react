@@ -5,13 +5,13 @@ import { getDatabase, ref } from "firebase/database";
 import { set } from "lodash";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAcscfW_SLvgp9jUKwrqxLbPdAyPRcoyRI",
-  authDomain: "fir-f153e.firebaseapp.com",
-  projectId: "fir-f153e",
-  storageBucket: "fir-f153e.firebasestorage.app",
-  messagingSenderId: "361763405118",
-  appId: "1:361763405118:web:a8b52cf1fa421e9629006f",
-  databaseURL: "https://fir-f153e-default-rtdb.firebaseio.com/"
+ apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
 };
 
 const firebaseApp = initializeApp(firebaseConfig);
